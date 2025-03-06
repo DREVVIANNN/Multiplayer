@@ -113,6 +113,22 @@ function getRandomSafeSpot() {
   ]);
 }
 
+let player = { x: 0, y: 0 };
+
+        function movePlayer(direction) {
+            switch (direction) {
+                case 'w': player.y -= 10; break;
+                case 'a': player.x -= 10; break;
+                case 's': player.y += 10; break;
+                case 'd': player.x += 10; break;
+            }
+            console.log(`Player position: x=${player.x}, y=${player.y}`);
+        }
+
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('touchstart', () => movePlayer(button.id));
+        });
+
 
 (function () {
 
