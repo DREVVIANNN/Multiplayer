@@ -152,3 +152,25 @@ button:active {
 .Coin_shadow {
   background: url(coin-shadow.png) no-repeat no-repeat;
 }
+
+.gamepad {
+            display: grid;
+            grid-template-columns: repeat(3, 60px);
+            gap: 10px;
+        }
+        .button {
+            width: 60px;
+            height: 60px;
+            background: #555;
+            color: white;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            user-select: none;
+            cursor: pointer;
+        }
+        .button:active {
+            background: #888;
+        }
