@@ -115,7 +115,7 @@ function getRandomSafeSpot() {
 
 let player = { x: 0, y: 0 };
 
-        function movePlayer(direction) {
+        function players[playerId](direction) {
             switch (direction) {
                 case 'w': player.y -= 10; break;
                 case 'a': player.x -= 10; break;
@@ -126,7 +126,7 @@ let player = { x: 0, y: 0 };
         }
 
         document.querySelectorAll('.button').forEach(button => {
-            button.addEventListener('touchstart', () => movePlayer(button.id));
+            button.addEventListener('touchstart', () => players[playerId](button.id));
         });
 
 
